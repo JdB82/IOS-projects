@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60461FD11E4E0C96000DCAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60461FD01E4E0C96000DCAF8 /* AppDelegate.swift */; };
+		60461FD61E4E0C96000DCAF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60461FD41E4E0C96000DCAF8 /* Main.storyboard */; };
+		60461FD81E4E0C96000DCAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60461FD71E4E0C96000DCAF8 /* Assets.xcassets */; };
+		60461FDB1E4E0C96000DCAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60461FD91E4E0C96000DCAF8 /* LaunchScreen.storyboard */; };
+		60461FE61E4E0C96000DCAF8 /* vliegtijdenKLMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60461FE51E4E0C96000DCAF8 /* vliegtijdenKLMTests.swift */; };
+		60461FF11E4E0C96000DCAF8 /* vliegtijdenKLMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60461FF01E4E0C96000DCAF8 /* vliegtijdenKLMUITests.swift */; };
+		60461FFF1E4E0CD3000DCAF8 /* TableViewControllerKLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60461FFE1E4E0CD3000DCAF8 /* TableViewControllerKLM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60461FE21E4E0C96000DCAF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60461FC51E4E0C96000DCAF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60461FCC1E4E0C96000DCAF8;
+			remoteInfo = vliegtijdenKLM;
+		};
+		60461FED1E4E0C96000DCAF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60461FC51E4E0C96000DCAF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60461FCC1E4E0C96000DCAF8;
+			remoteInfo = vliegtijdenKLM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		60461FCD1E4E0C96000DCAF8 /* vliegtijdenKLM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vliegtijdenKLM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60461FD01E4E0C96000DCAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60461FD51E4E0C96000DCAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60461FD71E4E0C96000DCAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60461FDA1E4E0C96000DCAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60461FDC1E4E0C96000DCAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60461FE11E4E0C96000DCAF8 /* vliegtijdenKLMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vliegtijdenKLMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60461FE51E4E0C96000DCAF8 /* vliegtijdenKLMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vliegtijdenKLMTests.swift; sourceTree = "<group>"; };
+		60461FE71E4E0C96000DCAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60461FEC1E4E0C96000DCAF8 /* vliegtijdenKLMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vliegtijdenKLMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60461FF01E4E0C96000DCAF8 /* vliegtijdenKLMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vliegtijdenKLMUITests.swift; sourceTree = "<group>"; };
+		60461FF21E4E0C96000DCAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60461FFE1E4E0CD3000DCAF8 /* TableViewControllerKLM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewControllerKLM.swift; path = ../TableViewControllerKLM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60461FCA1E4E0C96000DCAF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60461FDE1E4E0C96000DCAF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60461FE91E4E0C96000DCAF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60461FC41E4E0C96000DCAF8 = {
+			isa = PBXGroup;
+			children = (
+				60461FCF1E4E0C96000DCAF8 /* vliegtijdenKLM */,
+				60461FE41E4E0C96000DCAF8 /* vliegtijdenKLMTests */,
+				60461FEF1E4E0C96000DCAF8 /* vliegtijdenKLMUITests */,
+				60461FCE1E4E0C96000DCAF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60461FCE1E4E0C96000DCAF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60461FCD1E4E0C96000DCAF8 /* vliegtijdenKLM.app */,
+				60461FE11E4E0C96000DCAF8 /* vliegtijdenKLMTests.xctest */,
+				60461FEC1E4E0C96000DCAF8 /* vliegtijdenKLMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60461FCF1E4E0C96000DCAF8 /* vliegtijdenKLM */ = {
+			isa = PBXGroup;
+			children = (
+				60461FD01E4E0C96000DCAF8 /* AppDelegate.swift */,
+				60461FFE1E4E0CD3000DCAF8 /* TableViewControllerKLM.swift */,
+				60461FD41E4E0C96000DCAF8 /* Main.storyboard */,
+				60461FD71E4E0C96000DCAF8 /* Assets.xcassets */,
+				60461FD91E4E0C96000DCAF8 /* LaunchScreen.storyboard */,
+				60461FDC1E4E0C96000DCAF8 /* Info.plist */,
+			);
+			path = vliegtijdenKLM;
+			sourceTree = "<group>";
+		};
+		60461FE41E4E0C96000DCAF8 /* vliegtijdenKLMTests */ = {
+			isa = PBXGroup;
+			children = (
+				60461FE51E4E0C96000DCAF8 /* vliegtijdenKLMTests.swift */,
+				60461FE71E4E0C96000DCAF8 /* Info.plist */,
+			);
+			path = vliegtijdenKLMTests;
+			sourceTree = "<group>";
+		};
+		60461FEF1E4E0C96000DCAF8 /* vliegtijdenKLMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60461FF01E4E0C96000DCAF8 /* vliegtijdenKLMUITests.swift */,
+				60461FF21E4E0C96000DCAF8 /* Info.plist */,
+			);
+			path = vliegtijdenKLMUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60461FCC1E4E0C96000DCAF8 /* vliegtijdenKLM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60461FF51E4E0C96000DCAF8 /* Build configuration list for PBXNativeTarget "vliegtijdenKLM" */;
+			buildPhases = (
+				60461FC91E4E0C96000DCAF8 /* Sources */,
+				60461FCA1E4E0C96000DCAF8 /* Frameworks */,
+				60461FCB1E4E0C96000DCAF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vliegtijdenKLM;
+			productName = vliegtijdenKLM;
+			productReference = 60461FCD1E4E0C96000DCAF8 /* vliegtijdenKLM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60461FE01E4E0C96000DCAF8 /* vliegtijdenKLMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60461FF81E4E0C96000DCAF8 /* Build configuration list for PBXNativeTarget "vliegtijdenKLMTests" */;
+			buildPhases = (
+				60461FDD1E4E0C96000DCAF8 /* Sources */,
+				60461FDE1E4E0C96000DCAF8 /* Frameworks */,
+				60461FDF1E4E0C96000DCAF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60461FE31E4E0C96000DCAF8 /* PBXTargetDependency */,
+			);
+			name = vliegtijdenKLMTests;
+			productName = vliegtijdenKLMTests;
+			productReference = 60461FE11E4E0C96000DCAF8 /* vliegtijdenKLMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60461FEB1E4E0C96000DCAF8 /* vliegtijdenKLMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60461FFB1E4E0C96000DCAF8 /* Build configuration list for PBXNativeTarget "vliegtijdenKLMUITests" */;
+			buildPhases = (
+				60461FE81E4E0C96000DCAF8 /* Sources */,
+				60461FE91E4E0C96000DCAF8 /* Frameworks */,
+				60461FEA1E4E0C96000DCAF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60461FEE1E4E0C96000DCAF8 /* PBXTargetDependency */,
+			);
+			name = vliegtijdenKLMUITests;
+			productName = vliegtijdenKLMUITests;
+			productReference = 60461FEC1E4E0C96000DCAF8 /* vliegtijdenKLMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60461FC51E4E0C96000DCAF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jeroen de Bie";
+				TargetAttributes = {
+					60461FCC1E4E0C96000DCAF8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6CB7HT7995;
+						ProvisioningStyle = Automatic;
+					};
+					60461FE01E4E0C96000DCAF8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6CB7HT7995;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 60461FCC1E4E0C96000DCAF8;
+					};
+					60461FEB1E4E0C96000DCAF8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6CB7HT7995;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 60461FCC1E4E0C96000DCAF8;
+					};
+				};
+			};
+			buildConfigurationList = 60461FC81E4E0C96000DCAF8 /* Build configuration list for PBXProject "vliegtijdenKLM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60461FC41E4E0C96000DCAF8;
+			productRefGroup = 60461FCE1E4E0C96000DCAF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60461FCC1E4E0C96000DCAF8 /* vliegtijdenKLM */,
+				60461FE01E4E0C96000DCAF8 /* vliegtijdenKLMTests */,
+				60461FEB1E4E0C96000DCAF8 /* vliegtijdenKLMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60461FCB1E4E0C96000DCAF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60461FDB1E4E0C96000DCAF8 /* LaunchScreen.storyboard in Resources */,
+				60461FD81E4E0C96000DCAF8 /* Assets.xcassets in Resources */,
+				60461FD61E4E0C96000DCAF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60461FDF1E4E0C96000DCAF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60461FEA1E4E0C96000DCAF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60461FC91E4E0C96000DCAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60461FFF1E4E0CD3000DCAF8 /* TableViewControllerKLM.swift in Sources */,
+				60461FD11E4E0C96000DCAF8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60461FDD1E4E0C96000DCAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60461FE61E4E0C96000DCAF8 /* vliegtijdenKLMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60461FE81E4E0C96000DCAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60461FF11E4E0C96000DCAF8 /* vliegtijdenKLMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60461FE31E4E0C96000DCAF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60461FCC1E4E0C96000DCAF8 /* vliegtijdenKLM */;
+			targetProxy = 60461FE21E4E0C96000DCAF8 /* PBXContainerItemProxy */;
+		};
+		60461FEE1E4E0C96000DCAF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60461FCC1E4E0C96000DCAF8 /* vliegtijdenKLM */;
+			targetProxy = 60461FED1E4E0C96000DCAF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60461FD41E4E0C96000DCAF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60461FD51E4E0C96000DCAF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60461FD91E4E0C96000DCAF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60461FDA1E4E0C96000DCAF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60461FF31E4E0C96000DCAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60461FF41E4E0C96000DCAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60461FF61E4E0C96000DCAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6CB7HT7995;
+				INFOPLIST_FILE = vliegtijdenKLM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.deBie.vliegtijdenKLM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		60461FF71E4E0C96000DCAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6CB7HT7995;
+				INFOPLIST_FILE = vliegtijdenKLM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.deBie.vliegtijdenKLM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		60461FF91E4E0C96000DCAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6CB7HT7995;
+				INFOPLIST_FILE = vliegtijdenKLMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.deBie.vliegtijdenKLMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vliegtijdenKLM.app/vliegtijdenKLM";
+			};
+			name = Debug;
+		};
+		60461FFA1E4E0C96000DCAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6CB7HT7995;
+				INFOPLIST_FILE = vliegtijdenKLMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.deBie.vliegtijdenKLMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vliegtijdenKLM.app/vliegtijdenKLM";
+			};
+			name = Release;
+		};
+		60461FFC1E4E0C96000DCAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6CB7HT7995;
+				INFOPLIST_FILE = vliegtijdenKLMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.deBie.vliegtijdenKLMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = vliegtijdenKLM;
+			};
+			name = Debug;
+		};
+		60461FFD1E4E0C96000DCAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6CB7HT7995;
+				INFOPLIST_FILE = vliegtijdenKLMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.deBie.vliegtijdenKLMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = vliegtijdenKLM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60461FC81E4E0C96000DCAF8 /* Build configuration list for PBXProject "vliegtijdenKLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60461FF31E4E0C96000DCAF8 /* Debug */,
+				60461FF41E4E0C96000DCAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60461FF51E4E0C96000DCAF8 /* Build configuration list for PBXNativeTarget "vliegtijdenKLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60461FF61E4E0C96000DCAF8 /* Debug */,
+				60461FF71E4E0C96000DCAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60461FF81E4E0C96000DCAF8 /* Build configuration list for PBXNativeTarget "vliegtijdenKLMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60461FF91E4E0C96000DCAF8 /* Debug */,
+				60461FFA1E4E0C96000DCAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60461FFB1E4E0C96000DCAF8 /* Build configuration list for PBXNativeTarget "vliegtijdenKLMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60461FFC1E4E0C96000DCAF8 /* Debug */,
+				60461FFD1E4E0C96000DCAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60461FC51E4E0C96000DCAF8 /* Project object */;
+}

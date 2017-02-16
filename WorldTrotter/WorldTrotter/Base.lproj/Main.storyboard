@@ -114,17 +114,17 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="295" y="909"/>
+            <point key="canvasLocation" x="-780" y="904"/>
         </scene>
         <!--Map-->
         <scene sceneID="7o0-Qg-jlW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uz8-MI-xvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Wd6-10-dxx" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapImage" selectedImage="MapImage" id="e2r-iw-qoc"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uz8-MI-xvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152.8" y="142.57871064467767"/>
+            <point key="canvasLocation" x="546" y="904"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5O8-E1-Ae7">
@@ -132,6 +132,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DsZ-tD-JvY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="dgJ-r2-eBE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
