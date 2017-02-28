@@ -24,12 +24,10 @@ class TableViewControllerBucketList: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "bucketListTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: "bucketListTableViewCell")
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,16 +48,20 @@ class TableViewControllerBucketList: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
-        cell.detailTextLabel?.text = bucketListSilvia[indexPath.row]
+        let cell: bucketListTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "bucketListTableViewCell", for: indexPath) as! bucketListTableViewCell
         
-        cell.textLabel?.text = "Wish \(indexPath.row + 1)"
+        let currentBucketWish = bucketListSilvia[indexPath.row]
         
-        cell.imageView?.image = #imageLiteral(resourceName: "images-5")
+        cell.setDataForTableCell(bucketList: currentBucketWish)
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPatch: IndexPath) -> CGFloat {
+        return 75
+    }
+
     
 
     /*

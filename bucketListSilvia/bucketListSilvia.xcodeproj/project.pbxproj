@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600D19A81E66008C008FB917 /* BucketWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600D19A71E66008C008FB917 /* BucketWish.swift */; };
+		600D19AA1E660260008FB917 /* BucketWishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600D19A91E660260008FB917 /* BucketWishService.swift */; };
+		6013C4211E630A7C000A50C7 /* bucketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6013C41F1E630A7C000A50C7 /* bucketListTableViewCell.swift */; };
+		6013C4221E630A7C000A50C7 /* bucketListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6013C4201E630A7C000A50C7 /* bucketListTableViewCell.xib */; };
 		609C4A0B1E50E26700E0C044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609C4A0A1E50E26700E0C044 /* AppDelegate.swift */; };
 		609C4A101E50E26700E0C044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609C4A0E1E50E26700E0C044 /* Main.storyboard */; };
 		609C4A121E50E26700E0C044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609C4A111E50E26700E0C044 /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		600D19A71E66008C008FB917 /* BucketWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketWish.swift; sourceTree = "<group>"; };
+		600D19A91E660260008FB917 /* BucketWishService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketWishService.swift; sourceTree = "<group>"; };
+		6013C41F1E630A7C000A50C7 /* bucketListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bucketListTableViewCell.swift; sourceTree = "<group>"; };
+		6013C4201E630A7C000A50C7 /* bucketListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = bucketListTableViewCell.xib; sourceTree = "<group>"; };
 		609C4A071E50E26700E0C044 /* bucketListSilvia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bucketListSilvia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609C4A0A1E50E26700E0C044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		609C4A0F1E50E26700E0C044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +110,10 @@
 				609C4A0E1E50E26700E0C044 /* Main.storyboard */,
 				609C4A111E50E26700E0C044 /* Assets.xcassets */,
 				609C4A131E50E26700E0C044 /* LaunchScreen.storyboard */,
+				6013C41F1E630A7C000A50C7 /* bucketListTableViewCell.swift */,
+				6013C4201E630A7C000A50C7 /* bucketListTableViewCell.xib */,
+				600D19A71E66008C008FB917 /* BucketWish.swift */,
+				600D19A91E660260008FB917 /* BucketWishService.swift */,
 				609C4A161E50E26700E0C044 /* Info.plist */,
 			);
 			path = bucketListSilvia;
@@ -236,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				609C4A151E50E26700E0C044 /* LaunchScreen.storyboard in Resources */,
+				6013C4221E630A7C000A50C7 /* bucketListTableViewCell.xib in Resources */,
 				609C4A121E50E26700E0C044 /* Assets.xcassets in Resources */,
 				609C4A101E50E26700E0C044 /* Main.storyboard in Resources */,
 			);
@@ -262,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600D19A81E66008C008FB917 /* BucketWish.swift in Sources */,
+				6013C4211E630A7C000A50C7 /* bucketListTableViewCell.swift in Sources */,
 				609C4A0B1E50E26700E0C044 /* AppDelegate.swift in Sources */,
 				609C4A391E50E2B800E0C044 /* TableViewControllerBucketList.swift in Sources */,
+				600D19AA1E660260008FB917 /* BucketWishService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +530,7 @@
 				609C4A311E50E26700E0C044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		609C4A321E50E26700E0C044 /* Build configuration list for PBXNativeTarget "bucketListSilviaTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +539,7 @@
 				609C4A341E50E26700E0C044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		609C4A351E50E26700E0C044 /* Build configuration list for PBXNativeTarget "bucketListSilviaUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +548,7 @@
 				609C4A371E50E26700E0C044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
