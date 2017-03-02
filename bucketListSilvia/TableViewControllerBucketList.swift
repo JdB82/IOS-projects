@@ -9,13 +9,13 @@
 import UIKit
 
 class TableViewControllerBucketList: UITableViewController {
-
-    var bucketListSilvia = ["Parachute jumping", "Get married", "Going for a camping trip", "Writing a book", "Doing a suprice trip", "See the Northern light"]
+    
+    var bucketArray: [BucketWishes] = []
     
     @IBOutlet weak var TextFieldOutlet: UITextField!
     
     @IBAction func AddWish(_ sender: Any) {
-        bucketListSilvia.append(TextFieldOutlet.text!)
+//        bucketListSilvia.append(TextFieldOutlet.text!)
         self.tableView.reloadData()
     }
     
@@ -27,9 +27,24 @@ class TableViewControllerBucketList: UITableViewController {
         
         let nib = UINib(nibName: "bucketListTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "bucketListTableViewCell")
+        
+        // Register to receive notification data // Hieronder stemt Notification af op het keywoord "BucketWishesnotify".
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(TableViewControllerBucketList.notifyObservers),
+                                               name:  NSNotification.Name(rawValue: "BucketWishesnotify" ),
+                                               object: nil)
+        
+        DataProvider.sharedInstance.getBucketListData()
 
     }
-
+    
+    func notifyObservers(notification: NSNotification) {
+        var bucketlistDictionary: Dictionary<String,[BucketWishes]> = notification.userInfo as! Dictionary<String,[BucketWishes]>
+        bucketArray = bucketlistDictionary["BucketWishes"]! //showFestivalsOnMap()
+        
+        tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,14 +59,14 @@ class TableViewControllerBucketList: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return bucketListSilvia.count
+        return bucketArray.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: bucketListTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "bucketListTableViewCell", for: indexPath) as! bucketListTableViewCell
         
-        let currentBucketWish = bucketListSilvia[indexPath.row]
+        let currentBucketWish = bucketArray[indexPath.row]
         
         cell.setDataForTableCell(bucketList: currentBucketWish)
         
@@ -59,7 +74,7 @@ class TableViewControllerBucketList: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPatch: IndexPath) -> CGFloat {
-        return 75
+        return 120
     }
 
     
@@ -76,13 +91,29 @@ class TableViewControllerBucketList: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            bucketListSilvia.remove(at: indexPath.row)
+            bucketArray.remove(at: indexPath.row)
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
+    
+    func addRemoveChild(){
+        
+        // Listen for new comments in the Firebase database
+        commentsRef.observe(.childAdded, with: { (snapshot) -> Void in
+            self.comments.append(snapshot)
+            self.tableView.insertRows(at: [IndexPath(row: self.comments.count-1, section: self.kSectionComments)], with: UITableViewRowAnimation.automatic)
+        })
+        // Listen for deleted comments in the Firebase database
+        commentsRef.observe(.childRemoved, with: { (snapshot) -> Void in
+            let index = self.indexOfMessage(snapshot)
+            self.comments.remove(at: index)
+            self.tableView.deleteRows(at: [IndexPath(row: index, section: self.kSectionComments)], with: UITableViewRowAnimation.automatic)
+        })
+    }
+    
     
 
     /*

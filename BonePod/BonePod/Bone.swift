@@ -19,4 +19,3 @@ class Bone {
         self.crunched = crunched
     }
 }
-

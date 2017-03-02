@@ -25,10 +25,10 @@ class bucketListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setDataForTableCell(bucketList: String) {
-        self.Title?.text = bucketList
-        self.textView?.text = bucketList
-//        self.bucketImage?.imageView = #imageLiteral(resourceName: "images-5")
+    func setDataForTableCell(bucketList: BucketWishes) {
+        self.Title?.text = bucketList.wish
+        self.textView?.text = ("\(bucketList.place!), \(bucketList.when!)")
+        self.bucketImage?.image = #imageLiteral(resourceName: "images-5")
     }
     
 }
