@@ -27,16 +27,43 @@ class Monster{
 // 13) A:2
     
     func eatHuman(human: Human) -> [Bone] {
-        if human.type == .boy {
-            human.die()
-            print("Yummy i like eating boys")
-        } else {
-            print("Yuck")
-        }
+        
+        isTheMonsterHappy(human: human)
         
         crunchBones(bones: human.bones)
+        
+//        
+//        if human.type == .boy {
+//            print("Monster is Happy")
+//        } else if human.type == .boy {
+//            print("Grompy old monster")
+//        } else if human.type == .woman {
+//            print("Not my taste")
+//        } else if human.type == .man {
+//            print("A lot of meat")
+//        } else {
+//            print("Ooh yesh a alien")
+//        }
+//        
+//        for currentBone in human.bones {
+//            currentBone.crunched = true
+//            allCrunchedBones.append(currentBone)
+//            switch currentBone.type {
+//            case boneType.boyBone:
+//                print("crunching boy")
+//            case boneType.manBone:
+//                print("crunching man")
+//            case boneType.womanBone:
+//                print("crunching woman")
+//            }
+//        }
+//        
         return allCrunchedBones
     }
+    
+    
+    
+    
     
     func eatManyHumans(humans: [Human]) -> [Bone] {
         for human in humans {
@@ -63,7 +90,20 @@ class Monster{
             print("crunching woman")
         }
     }
-        
+    
+    func isTheMonsterHappy(human: Human) -> String {
+        if human.type == .boy {
+            return "Monster is Happy"
+        } else if human.type == .boy {
+            return "Grompy old monster"
+        } else if human.type == .woman {
+            return("Not my taste")
+        } else if human.type == .man {
+            return("A lot of meat")
+        } else {
+            return("Ooh yesh a alien")
+        }
+    }
 }
 
 

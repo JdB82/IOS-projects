@@ -30,7 +30,7 @@ for returnBones in bonesReturned {
 }
 
 
-
+print(spaska.isTheMonsterHappy(human: theBoy))
 
 
 
