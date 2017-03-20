@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CandleLight" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CandleOff" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-e0-Fts">
+                                <rect key="frame" x="67" y="135" width="240" height="321"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0Cb-c6-4Jz"/>
+                                    <constraint firstAttribute="height" constant="321" id="5G2-y0-l9g"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mg-L0-DyQ">
+                                <rect key="frame" x="126" y="558" width="121" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.69019607839999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Put Candle on">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="LightOnOffButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrF-gM-RJx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6mg-L0-DyQ" firstAttribute="top" secondItem="SIu-e0-Fts" secondAttribute="bottom" constant="102" id="PTI-LX-bTS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6mg-L0-DyQ" secondAttribute="bottom" constant="65" id="TAV-47-agA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6mg-L0-DyQ" secondAttribute="trailing" constant="112" id="Wpt-1g-04I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SIu-e0-Fts" secondAttribute="trailing" constant="52" id="d9y-oR-wHo"/>
+                            <constraint firstItem="SIu-e0-Fts" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="ucP-dq-Exu"/>
+                            <constraint firstItem="6mg-L0-DyQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="vCN-3K-n6n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flameOnnOrOff" destination="SIu-e0-Fts" id="x6c-Dj-DSg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CandleOff" width="170" height="228"/>
+    </resources>
+</document>
